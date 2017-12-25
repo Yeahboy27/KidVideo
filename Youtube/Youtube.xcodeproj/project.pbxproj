@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0401FEE11FE7B679000F866D /* PlayerVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FEE01FE7B679000F866D /* PlayerVideoViewController.swift */; };
 		041873AE1F52BA3C00B9EDE5 /* DetailPlaylistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041873AD1F52BA3C00B9EDE5 /* DetailPlaylistCollectionViewCell.swift */; };
 		041873B01F52D35D00B9EDE5 /* Extension + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041873AF1F52D35D00B9EDE5 /* Extension + UIColor.swift */; };
 		041AF8681F5423F000D49549 /* Extension + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041AF8671F5423F000D49549 /* Extension + Date.swift */; };
@@ -19,14 +20,22 @@
 		042F12B81F500EEC007408C1 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F12B71F500EEC007408C1 /* Video.swift */; };
 		042F12BB1F50283D007408C1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F12BA1F50283D007408C1 /* APIClient.swift */; };
 		042F12BD1F5028E2007408C1 /* APISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F12BC1F5028E2007408C1 /* APISettings.swift */; };
+		043246FE1F8473E30043FDBC /* APIClient + Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043246FD1F8473E30043FDBC /* APIClient + Search.swift */; };
+		0483B1321F887814005CA417 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483B1311F887814005CA417 /* SearchViewController.swift */; };
+		04C7CFFA1FE6BE4400DE7294 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7CFF91FE6BE4400DE7294 /* LibraryViewController.swift */; };
+		04C8537B1F8E2F080087AB82 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C8537A1F8E2F080087AB82 /* SearchCollectionViewCell.swift */; };
 		04C9EE781F50876000F172F3 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9EE771F50876000F172F3 /* HomeCollectionViewCell.swift */; };
 		04C9EE7B1F5089C400F172F3 /* Extension + UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9EE7A1F5089C400F172F3 /* Extension + UIImageView.swift */; };
+		04DB96FA1F7FA43B0032E492 /* AllChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB96F91F7FA43B0032E492 /* AllChannelTableViewController.swift */; };
+		04DB96FD1F7FA4980032E492 /* ConstantChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB96FC1F7FA4980032E492 /* ConstantChannel.swift */; };
 		04E599FA1F4DD8FE007CA849 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04E599F91F4DD8FE007CA849 /* GoogleService-Info.plist */; };
 		04F696E01F51BF8900BAF2A4 /* DetailPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F696DF1F51BF8900BAF2A4 /* DetailPlaylistViewController.swift */; };
+		04FD91A01F585A740090FF82 /* AllPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FD919F1F585A740090FF82 /* AllPlaylistViewController.swift */; };
 		5552C46F660F442717407C84 /* Pods_Youtube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8BAC41AB968D3088158BD1 /* Pods_Youtube.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0401FEE01FE7B679000F866D /* PlayerVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVideoViewController.swift; sourceTree = "<group>"; };
 		041873AD1F52BA3C00B9EDE5 /* DetailPlaylistCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPlaylistCollectionViewCell.swift; sourceTree = "<group>"; };
 		041873AF1F52D35D00B9EDE5 /* Extension + UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
 		041AF8671F5423F000D49549 /* Extension + Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + Date.swift"; sourceTree = "<group>"; };
@@ -41,10 +50,17 @@
 		042F12B71F500EEC007408C1 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		042F12BA1F50283D007408C1 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		042F12BC1F5028E2007408C1 /* APISettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISettings.swift; sourceTree = "<group>"; };
+		043246FD1F8473E30043FDBC /* APIClient + Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient + Search.swift"; sourceTree = "<group>"; };
+		0483B1311F887814005CA417 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		04C7CFF91FE6BE4400DE7294 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		04C8537A1F8E2F080087AB82 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		04C9EE771F50876000F172F3 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		04C9EE7A1F5089C400F172F3 /* Extension + UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UIImageView.swift"; sourceTree = "<group>"; };
+		04DB96F91F7FA43B0032E492 /* AllChannelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChannelTableViewController.swift; sourceTree = "<group>"; };
+		04DB96FC1F7FA4980032E492 /* ConstantChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantChannel.swift; sourceTree = "<group>"; };
 		04E599F91F4DD8FE007CA849 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04F696DF1F51BF8900BAF2A4 /* DetailPlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPlaylistViewController.swift; sourceTree = "<group>"; };
+		04FD919F1F585A740090FF82 /* AllPlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllPlaylistViewController.swift; sourceTree = "<group>"; };
 		9AB36DF1CF2D80A85C0AA8B9 /* Pods-Youtube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youtube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Youtube/Pods-Youtube.debug.xcconfig"; sourceTree = "<group>"; };
 		9DD50E11C73EEF86CC586D7D /* Pods-Youtube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youtube.release.xcconfig"; path = "Pods/Target Support Files/Pods-Youtube/Pods-Youtube.release.xcconfig"; sourceTree = "<group>"; };
 		FA8BAC41AB968D3088158BD1 /* Pods_Youtube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Youtube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,13 +99,14 @@
 		0428CC711F4C7A6500DD1311 /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
+				0428CC761F4C7A6500DD1311 /* Main.storyboard */,
+				0428CC721F4C7A6500DD1311 /* AppDelegate.swift */,
 				04F696DE1F51BF6900BAF2A4 /* ViewControllers */,
 				04C9EE791F50898A00F172F3 /* Extension */,
 				04C9EE761F50873A00F172F3 /* View */,
-				0428CC721F4C7A6500DD1311 /* AppDelegate.swift */,
 				042F12B91F5027FE007408C1 /* API */,
+				04DB96FB1F7FA46F0032E492 /* Constant */,
 				042F12B61F500E3F007408C1 /* Model */,
-				0428CC761F4C7A6500DD1311 /* Main.storyboard */,
 				0428CC791F4C7A6500DD1311 /* Assets.xcassets */,
 				0428CC7B1F4C7A6500DD1311 /* LaunchScreen.storyboard */,
 				0428CC7E1F4C7A6500DD1311 /* Info.plist */,
@@ -112,6 +129,7 @@
 			children = (
 				042F12BA1F50283D007408C1 /* APIClient.swift */,
 				042F12BC1F5028E2007408C1 /* APISettings.swift */,
+				043246FD1F8473E30043FDBC /* APIClient + Search.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -121,6 +139,7 @@
 			children = (
 				04C9EE771F50876000F172F3 /* HomeCollectionViewCell.swift */,
 				041873AD1F52BA3C00B9EDE5 /* DetailPlaylistCollectionViewCell.swift */,
+				04C8537A1F8E2F080087AB82 /* SearchCollectionViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -135,11 +154,24 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
+		04DB96FB1F7FA46F0032E492 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				04DB96FC1F7FA4980032E492 /* ConstantChannel.swift */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
 		04F696DE1F51BF6900BAF2A4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0483B1311F887814005CA417 /* SearchViewController.swift */,
+				04DB96F91F7FA43B0032E492 /* AllChannelTableViewController.swift */,
 				04F696DF1F51BF8900BAF2A4 /* DetailPlaylistViewController.swift */,
 				0428CC741F4C7A6500DD1311 /* ViewController.swift */,
+				04FD919F1F585A740090FF82 /* AllPlaylistViewController.swift */,
+				04C7CFF91FE6BE4400DE7294 /* LibraryViewController.swift */,
+				0401FEE01FE7B679000F866D /* PlayerVideoViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -259,6 +291,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Youtube/Pods-Youtube-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
@@ -266,10 +299,12 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
@@ -277,6 +312,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,14 +347,22 @@
 			files = (
 				04C9EE781F50876000F172F3 /* HomeCollectionViewCell.swift in Sources */,
 				0428CC751F4C7A6500DD1311 /* ViewController.swift in Sources */,
+				04C7CFFA1FE6BE4400DE7294 /* LibraryViewController.swift in Sources */,
+				043246FE1F8473E30043FDBC /* APIClient + Search.swift in Sources */,
+				0483B1321F887814005CA417 /* SearchViewController.swift in Sources */,
 				042F12B81F500EEC007408C1 /* Video.swift in Sources */,
+				04DB96FD1F7FA4980032E492 /* ConstantChannel.swift in Sources */,
 				041AF8681F5423F000D49549 /* Extension + Date.swift in Sources */,
 				041873AE1F52BA3C00B9EDE5 /* DetailPlaylistCollectionViewCell.swift in Sources */,
+				04C8537B1F8E2F080087AB82 /* SearchCollectionViewCell.swift in Sources */,
+				04DB96FA1F7FA43B0032E492 /* AllChannelTableViewController.swift in Sources */,
 				04F696E01F51BF8900BAF2A4 /* DetailPlaylistViewController.swift in Sources */,
 				0428CC731F4C7A6500DD1311 /* AppDelegate.swift in Sources */,
+				04FD91A01F585A740090FF82 /* AllPlaylistViewController.swift in Sources */,
 				04C9EE7B1F5089C400F172F3 /* Extension + UIImageView.swift in Sources */,
 				041873B01F52D35D00B9EDE5 /* Extension + UIColor.swift in Sources */,
 				042F12BB1F50283D007408C1 /* APIClient.swift in Sources */,
+				0401FEE11FE7B679000F866D /* PlayerVideoViewController.swift in Sources */,
 				042F12B51F4FF9DD007408C1 /* Playlist.swift in Sources */,
 				042F12BD1F5028E2007408C1 /* APISettings.swift in Sources */,
 			);

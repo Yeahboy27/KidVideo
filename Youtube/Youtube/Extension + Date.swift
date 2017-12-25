@@ -92,3 +92,30 @@ extension DateComponents {
     }
 }
 
+extension Int {
+    func convertFromSecondToTime() -> String {
+        if(self < 60 ) {
+            return "0:" + self.convertToShowTime()
+        } else if ( 60 <= self && self < 3600) {
+            let minute = Int(self/60).convertToShowTime()
+            let second = (self - 60 * Int(minute)!).convertToShowTime()
+            return minute + ":" + second
+        } else  {
+            let hour = Int(self/3600).convertToShowTime()
+            let minute = (self - 3600 * Int(hour)!/60).convertToShowTime()
+            let second = (self - 3600 * Int(hour)! - 60 * Int(minute)!).convertToShowTime()
+            return hour + ":" + minute + ":" + second
+        }
+    }
+    
+    func convertToShowTime() -> String {
+        if self < 10 {
+            return "0" + String(self)
+        } else {
+            return String(self)
+        }
+    }
+    
+    
+}
+

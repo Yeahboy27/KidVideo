@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA1518F8F8C8C92ECDB29D9473A70E6F"
+               BlueprintIdentifier = "DD7A61A43D7FF02B4E13965AF723541B"
                BuildableName = "Pods_Youtube.framework"
                BlueprintName = "Pods-Youtube"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CA1518F8F8C8C92ECDB29D9473A70E6F"
+            BlueprintIdentifier = "DD7A61A43D7FF02B4E13965AF723541B"
             BuildableName = "Pods_Youtube.framework"
             BlueprintName = "Pods-Youtube"
             ReferencedContainer = "container:Pods.xcodeproj">

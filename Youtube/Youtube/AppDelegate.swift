@@ -8,6 +8,8 @@
 import Google
 import GoogleSignIn
 import UIKit
+import RealmSwift
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var configureError: NSError?
         GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(String(describing: configureError))")
+        let realm = try! Realm()
+        try! realm.write {
+            let channel = Channel()
+            channel.id = allChannelId[0]
+            realm.add(channel)
+        }
+        
         return true
     }
 

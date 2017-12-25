@@ -14,7 +14,7 @@ class Playlist {
     var id = ""
     var title = ""
     var urlImage = ""
-    var channelTitle = ""
+    var channelId = ""
     var videos = [Video]()
     
     convenience init(id: String) {

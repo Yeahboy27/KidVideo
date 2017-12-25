@@ -11,11 +11,13 @@ import GoogleAPIClientForREST
 import GoogleSignIn
 
 class APIClient {
+    
     let service = GTLRYouTubeService()
     static let shared = APIClient()
+    var _completion : ((Bool) -> Void)?
     
-    func getVideo(idPlaylist: String, completion:  @escaping(_ allVideo: [Video]) -> Void) {
-        var allVideo: [Video] = []
+    func getDataForPlaylist(idPlaylist: String, completion:  @escaping(_ aplaylist: Playlist) -> Void) {
+        let playlist = Playlist(id: idPlaylist)
         let query = GTLRYouTubeQuery_PlaylistItemsList.query(withPart: "snippet,contentDetails")
         query.playlistId = idPlaylist
         query.maxResults = 50
@@ -28,20 +30,21 @@ class APIClient {
             if let respone = object as? GTLRYouTube_PlaylistItemListResponse {
                 if let items = respone.items {
                     for video in items {
-                        guard let id = video.contentDetails?.videoId else {
+                        guard let videoId = video.contentDetails?.videoId else {
                             fatalError()
                         }
-                        guard let urlImage = video.snippet?.thumbnails?.medium?.url else {
-                            fatalError()
+                        if let thumbails  = video.snippet?.thumbnails?.medium?.url {
+                            let aVideo = Video(id: videoId)
+                            aVideo.urlImage = thumbails
+                            playlist.videos.append(aVideo)
+                        } else {
+                            let aVideo = Video(id: videoId)
+                            playlist.videos.append(aVideo)
                         }
-                        guard let title = video.snippet?.title else {
-                            fatalError()
-                        }
-                        allVideo.append(Video(id: id, urlImage: urlImage, title: title))
                     }
                 }
             }
-            completion(allVideo)
+            completion(playlist)
         }
     }
     
@@ -74,6 +77,43 @@ class APIClient {
             completion(_video)
         }
     }
-
+    
+    func getAllPlaylistForChannel(id: String, completion: @escaping(_ playlists: [Playlist]) -> ()) {
+        var playlists = [Playlist]()
+        let query = GTLRYouTubeQuery_PlaylistsList.query(withPart: "snippet,contentDetails")
+        query.channelId = id
+        query.maxResults = 50
+        service.authorizer = GIDSignIn.sharedInstance().currentUser.authentication.fetcherAuthorizer()
+        APIClient.shared.service.executeQuery(query) { (ticket, object, error) in
+            if error != nil {
+                return
+            }
+            if let respone = object as? GTLRYouTube_PlaylistListResponse {
+                if let item = respone.items {
+                    for playlist in item {
+                        guard let id = playlist.identifier else {
+                            fatalError()
+                        }
+                        guard let title = playlist.snippet?.title else {
+                            fatalError()
+                        }
+                        if let thumbail = playlist.snippet?.thumbnails?.high?.url {
+                            let _playlist = Playlist(id: id)
+                            _playlist.urlImage = thumbail
+                            _playlist.title = title
+                            playlists.append(_playlist)
+                        } else {
+                              let _playlist = Playlist(id: id)
+                              _playlist.title = title
+                              playlists.append(_playlist)
+                        }
+                       
+                    }
+                }
+            }
+            completion(playlists)
+        }
+    }
+    
 }
    

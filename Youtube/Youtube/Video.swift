@@ -15,19 +15,29 @@ class Video {
     var urlImage = ""
     var title = ""
     var duration = -1
+    var channelId = ""
     
-    convenience init(id: String, urlImage : String, title: String) {
+    convenience init(id: String) {
         self.init()
         self.id = id
-        self.urlImage = urlImage
-        self.title = title
-    }
-    
-    func getDataVideo() {
-        APIClient.shared.getDataVideo(id: self.id) { (video) in
-            self.urlImage = video.urlImage
-            self.title = video.title
-            self.duration = video.duration
-        }
     }
 }
+
+class VideoFavorite: Object {
+    @objc dynamic var id = ""
+    @objc dynamic var urlImage = ""
+    @objc dynamic var title = ""
+}
+
+class VideoHistory: Object {
+    @objc dynamic var id = ""
+    @objc dynamic var urlImage = ""
+    @objc dynamic var title = ""
+}
+
+class Channel: Object {
+    @objc dynamic var id = ""
+}
+
+
+

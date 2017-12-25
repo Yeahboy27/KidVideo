@@ -9,6 +9,7 @@
 import GoogleAPIClientForREST
 import GoogleSignIn
 import UIKit
+import FSPagerView
 
 class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
     
@@ -91,14 +92,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
                 guard let id = playlist.identifier else {
                     fatalError()
                 }
-                
-                guard let title = playlist.snippet?.title else {
-                    fatalError()
-                }
-                guard let urlImage = playlist.snippet?.thumbnails?.medium?.url else {
-                    fatalError()
-                }
-                allVideo.append(Video(id: id, urlImage: urlImage, title: title))
+                allVideo.append(Video(id: id))
             }
         }
         collectionView.reloadData()
