@@ -221,8 +221,7 @@ extension DetailPlaylistViewController {
             })
             self.videoIdPlaying = self.dataCollection[0].id
 //            self.video.load(withVideoId: self.videoIdPlaying, playerVars:  ["playsinline": "1", "controls": "0", "fs":"0", "auxtoplay":"1", "showinfo": "0", "disablekb": "f", "modestbranding": "1"])
-            self.load(withVideoId: self.videoIdPlaying)
-            self.video.load
+            self.video.load(withVideoId: self.videoIdPlaying)
             self.video.currentTime()
             self.collectionView.reloadData()
         }
